@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Renaissance NFT</title>
+  <link rel="stylesheet" href="home.css"/>
+  <!-- Optional: Google Fonts for Modern Look -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./logo.png" alt="Logo" />
+    </div>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-links">
+      <li>Home</li>
+      <li>Marketplace</li>
+      <li>Artist</li>
+      <li>Community</li>
+      <li><button class="signup">Sign up</button></li>
+      <li class="line"></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="hero-text">
+      <h1 class="unlock">Unlock</h1>
+      <h1 class="title">The <span class="highlight">Digital</span> Renaissance</h1>
+      <p class="subtitle">
+        Join the revolution, embrace the digital revolution, and<br> become a part of the ever-evolving NFT ecosystem.
+      </p>
+       <section class="nft-list">
+    <div class="nft-card">
+      <img src="./bear.png" alt="Bear NFT" />
+      <h3>Bear</h3>
+      <span class="artist">by Andrew Garf</span>
+      <div class="price">40$</div>
+    </div>
+    <div class="nft-card">
+      <img src="./lion.png" alt="Lion NFT" />
+      <h3>Lion</h3>
+      <span class="artist">by Jen Stark</span>
+      <div class="price">80$</div>
+    </div>
+    <div class="nft-card">
+      <img src="./cat.png" alt="Cats NFT" />
+      <h3>Cats</h3>
+      <span class="artist">by Casey Reas</span>
+      <div class="price">120$</div>
+    </div>
+  </section>
+    </div>
+    <div class="hero-banner">
+        <img src="./banner.png" alt="banner">
+    </div>
+  </header>
+
+  <!-- Footer Navigation -->
+  <footer class="footer-nav">
+    <img src="star.png" alt="start" >
+    <span>Join the Revolution</span>
+    <img src="star.png" alt="start" >
+    <span>Future is Here</span>
+    <img src="star.png" alt="start" >
+    <span>NFT World</span>
+    <img src="star.png" alt="start" >
+    <span>Rule the Game</span>
+    <img src="star.png" alt="start" >
+    <span>We Are NFT</span>
+  </footer>
+  <!-- OPTIONAL: Toggle Menu JS for mobile (if needed) -->
+  <script>
+    const menu = document.getElementById('mobile-menu');
+    const links = document.querySelector('.nav-links');
+    menu.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

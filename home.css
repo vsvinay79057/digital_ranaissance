@@ -1,0 +1,334 @@
+/* Base styles and resets */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kapakana:wght@300..400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f9f3ee;
+    color: #3e2d4d;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    padding: 2rem 4vw;
+    background: #f9f3ee;
+    position: relative;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.logo img {
+    width: 13%;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links li {
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.line {
+    background: #6a6a6a;
+    height: 2rem;
+    width: 0.2rem;
+}
+
+.signup {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2.2rem;
+    border-radius: 10em;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+.signup:hover{
+    background-color: #efe8df;
+    color: #000;
+    border: 2px solid #fff;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2vw 4vw 0 4vw;
+}
+
+.hero-text {
+    min-width: 290px;
+}
+
+.unlock {
+    font-size: 4rem;
+    color: #c48b52;
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Great Vibes", cursive;
+    background: url("./ulock.png") no-repeat center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0.6rem 0;
+    line-height: 1.1;
+    background: url("./ulock.png") no-repeat center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Playfair Display", serif;
+}
+
+.highlight {
+    color: #b58afa;
+    font-family: serif;
+}
+
+.subtitle {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #434242;
+}
+
+.start-btn {
+    margin-top: 2rem;
+    background: #21253b;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border-radius: 24px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-banner {
+    width: 100%;
+}
+
+.hero-banner img {
+    width: 100%;
+}
+
+.hero-image .rock {
+    position: absolute;
+    left: 5%;
+    top: -30px;
+    width: 83px;
+}
+
+/* NFT Cards */
+.nft-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0vw 1.7rem 0vw;
+}
+
+.nft-card {
+    text-align: center;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.07);
+    min-width: 13rem;
+    margin-bottom: 16px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: #efe8df;
+    border: 2px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.nft-card img {
+    width: 118px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 3rem;
+    transition: transform 0.3s ease;
+}
+.nft-card:hover {
+    transform: scale(1.05);
+    /* Zoom the entire card by 5% */
+}
+.nft-card:hover img {
+   
+    transform: scale(1.1) translateY(-10px);
+}
+
+
+.nft-card h3 {
+    font-size: 1.8rem;
+}
+
+.nft-card .artist {
+    display: block;
+    color: #5f5e5f;
+    margin-top: 0.35rem;
+    font-size: 1.2rem;
+}
+
+.nft-card .price {
+    margin-top: 0.7rem;
+    background: #fff;
+    color: #bea686;
+    font-weight: 700;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding: 0.18rem 0.8rem;
+    font-size: 1.8rem;
+}
+
+/* Barcode Section */
+.barcode-section {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 1.4rem;
+}
+
+.barcode {
+    background: #fff;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Libre Barcode 39', monospace, serif;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: space-around;
+    align-items: center;
+    background: #efe8df;
+    padding: 1.3rem 0;
+    border-top: 1px solid #ececec;
+    font-size: 1.2rem;
+    color: #4d4d4d;
+    font-weight: 600;
+}
+
+.footer-nav img {
+    width: 3em;
+}
+
+/* Responsive Styles */
+@media (max-width: 1020px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-banner {
+        width: 100%;
+    }
+
+    .footer-nav {
+        font-size: 0.95rem;
+        padding: 1rem 0;
+    }
+
+    .nft-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        padding: 1.3rem 5vw;
+    }
+
+    .nav-links {
+        display: none;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: grid;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .footer-nav,
+    .hero-section,
+    .nft-list {
+        grid-template-columns: 1fr;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .hero-text,
+    .hero-banner,
+    .nft-card {
+        min-width: unset;
+        width: 100%;
+    }
+
+       
+    
+    .nft-list {
+        justify-items: center;
+    }
+   
+}
+
+@media (max-width: 450px) {
+
+    .navbar,
+    .footer-nav {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        max-width: 130px;
+    }
+
+    .barcode {
+        font-size: 1.1rem;
+        padding: 0.7rem 1rem;
+    }
+        .nav-links{
+            grid-auto-flow: row;
+        }
+
+}

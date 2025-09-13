@@ -1,4 +1,4 @@
-# digital_ranaissance<img width="1366" height="768" alt="Screenshot 2025-09-13 100325" src="https://github.com/user-attachments/assets/26ca73fb-bfeb-4dd8-93da-aaa58a48ce43" />
+<img width="1366" height="768" alt="Screenshot 2025-09-13 101245" src="https://github.com/user-attachments/assets/aa0f2d6c-7994-4eae-a9e9-1f202b34e890" />
 
 Files in this Project :-
 home.html → The main page
